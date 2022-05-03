@@ -1,1 +1,4 @@
-# Dark-Reader-Clone
+# How to use Dark Reader
+
+### Top Section
+
