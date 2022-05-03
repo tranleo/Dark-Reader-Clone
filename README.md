@@ -42,4 +42,18 @@ To use, first click the button (which will become highlighted), then adjust the 
 
 ### Theme Generation Modes
 
-![Theme Generation Section](/darkreader-theme-generations.png)
+![Theme Generation Section](/darkreader-theme-modes.png)
+
+- Filter is the initial Dark Reader mode based on CSS filters. It inverts the whole page and reverts some parts back. Requires GPU resources. It is fast and powerful, but has several issues: it disables text sub-pixel rendering, inverts already dark parts into light, causes lags on large pages, and fails to render some pages in Firefox.
+- Filter+ is the same as Filter, but is based on custom SVG filters and handles colors better making images less dull. Works poorly in Firefox.
+- Static rapidly generates a basic stylesheet.
+- Dynamic deeply analyzes website stylesheets, background images, and vector graphics. Requires some resources on initial page load, but produces the best visual results. The work on this mode is in progress, but it already works well for many modern websites.
+
+### Bottom Section
+
+![Bottom Section](/darkreader-footer.png)
+
+- Read our privacy policy, follow us on Twitter, view source and contribute on Github, read the Help documentation on this page.
+- Donate – if you like the extension, please consider supporting the active development of Dark Reader. Crowdfunding is powered by Open Collective, which currently uses Stripe for handling payments.
+- News – notifies about release notes and important events.
+- Developer tools – opens a config editor for the current theme mode.
